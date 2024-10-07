@@ -1,0 +1,118 @@
+body {
+   margin: 0;
+   background: black;
+   overflow: hidden;
+}
+
+#wrapper {
+   gap: 8px;
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: space-evenly;
+}
+
+#game {
+   height: 100vh;
+   max-height: 700px;
+   display: flex;
+   flex-wrap:wrap;
+   align-items: center;
+   justify-content: center;
+}
+
+#stats {
+   font-family: monospace;
+   color: black;
+   font-size: 3rem;
+   margin-top: 10%;
+}
+
+.card-prueba {
+   width: 167px;
+   height: 167px;
+   margin: 2rem;
+   position: relative;
+   transition: transform 0.5s;
+   transform-style: preserve-3d;
+}
+
+.card-prueba.active {
+   transform: rotateY(180deg);
+}
+
+.card-prueba div {
+   width: 100%;
+   height: 100%;
+   border-radius: 1rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   position: absolute;
+   backface-visibility: hidden;
+   pointer-events: none;
+}
+
+.card-prueba .face {
+   background: #05d1fe;
+   transform: rotateY( 180deg );
+   color: black;
+   font-size: 6rem;
+}
+
+.card-prueba .back {
+   border: 3px solid #05d1fe;
+   background: url(../img/back.jpg) center / contain no-repeat;
+}
+
+#senor {
+   background: url(../img/senor.jpg) center / contain no-repeat;
+}
+
+.title-spanglish span{
+   font-size: 16px;
+}
+
+.title-spanglish span {
+   line-height: 80px;
+   font-size: 60px;
+   font-weight: 700;
+}
+
+.sections-introduction {
+   display: flex;
+   padding: 0px 55px;
+   gap: 16px;
+}
+
+.section-introduction {
+   text-align: center;
+   display: grid;
+   gap: 16px;
+}
+
+.title-spanglish {
+   margin-bottom: 10%;
+   margin-top: 10%;
+}
+
+.section-introduction h2 {
+   font-size: 30px;
+   line-height: 29px;
+   margin: 0;
+   font-family: cursive;
+   height: fit-content;
+}
+
+.section-introduction p{
+   margin: 0;
+   font-size: 20px;
+   font-family: sans-serif;
+}
+
+footer p {
+   margin-bottom: 11px;
+   display: list-item;
+   font-size: 18px;
+   margin-left: 55px;
+}
